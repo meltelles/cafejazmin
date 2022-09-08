@@ -11,7 +11,7 @@
 
 /*imagenes index*/
 
-.contenedor {
+.imagenes {
     display:flex;
     justify-content: space-around;
     flex-direction: row;
@@ -19,7 +19,7 @@
     padding: 2rem;
 }
 
-.angeles {
+.imagenes img{
     width: 200px;
     border-radius: 5%;
     
@@ -34,7 +34,7 @@
     height: auto;
 }
 
-.cafe {
+.cafeEspecialidad {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,7 +42,7 @@
     padding: 0 20%;
 }
 
-.cafedeespecialidad {
+.cafeEspecialidad img{
     width: 350px;
     padding: 3rem;
 }
@@ -89,7 +89,7 @@ li {
     font-size:small
 }
 
-.imgprincipal img {
+.imgPrincipal img {
     width: 100%;
     height: auto;
 }
@@ -121,7 +121,7 @@ fieldset .form-select {
     padding: 10px 0;
 }
 
-fieldset input[type="text"],
+fieldset input[type="texto"],
 input[type="email"],
 select {
     padding: 12px;

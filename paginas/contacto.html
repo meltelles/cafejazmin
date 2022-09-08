@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link CSS-->
     <link rel="stylesheet" href="../estilos.css">
-    <title>Contacto | Jazmin Chebar</title>
     <!--Icono titulo-->
     <link rel="icon" href="../asset/logo-original.jpg" type="image/icono-original">
+    <title>Contacto | Jazmin Chebar</title>
 </head>
 
 <body>
@@ -26,35 +26,51 @@
             <li><a href="./carta.html">Carta</a></li>
         </ul>
     </header>
-    <h2>Suscribete</h2>
-    <!--Formulario-->
-    <div class="border-content">
-        <form>
-            <fieldset>
-                <div class="form-input">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" placeholder="Ingresa tu nombre" required />
-                </div>
-                <div class="form-input">
-                    <label for="email">Correo</label>
-                    <input type="email" name="email" placeholder="Ingresa tu mail" required />
-                </div>
-                <div class="form-input">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form-checkbox">
-                    <input type="checkbox" name="subscribe" value="true" required />
-                    <label for="subscribe">Quiero recibir novedades a mi mail</label>
-                </div>
-                <!--Boton de enviar-->
-                <button type="submit">Suscribirse!</button>
-            </fieldset>
-        </form>
-    </div>
+    <h2>
+        Suscribete
+    </h2>
+    <main>
+        <!--Formulario-->
+        <div class="border-content">
+            <form>
+                <fieldset>
+                    <div class="form-input">
+                        <label for="nombre">
+                            Nombre
+                        </label>
+                        <input type="texto" name="nombre" placeholder="Ingresa tu nombre" required />
+                    </div>
+                    <div class="form-input">
+                        <label for="email">
+                            Correo
+                        </label>
+                        <input type="email" name="email" placeholder="Ingresa tu mail" required />
+                    </div>
+                    <div class="form-input">
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+                        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="subscribe" value="true" required />
+                        <label for="subscribe">
+                            Quiero recibir novedades a mi mail
+                        </label>
+                    </div>
+                    <!--Boton de enviar-->
+                    <button type="enviar">
+                        Suscribirse!
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
     <!--Footer-->
-    <footer id="footer" class="menu border">
-        <a href="#header">Ir arriba</a>
+    <footer id="footer">
+        <a href="#header">
+            Ir arriba
+        </a>
     </footer>
 </body>
 

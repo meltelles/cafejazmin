@@ -37,7 +37,9 @@
 .cafe {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    padding: 0 20%;
 }
 
 .cafedeespecialidad {
@@ -72,7 +74,12 @@ ul {
     padding: 0.5rem;
     text-align: center;
     background-color: #F9CED5;
+    
 
+}
+a {
+    text-decoration: none;
+    color: #8B1825;
 }
 
 li {
@@ -135,4 +142,9 @@ fieldset button {
 footer {
     text-align: center;
     background-color: #F7F1D1;
+}
+
+.border-content {
+    max-width: 720px;
+    margin: 0 auto;
 }

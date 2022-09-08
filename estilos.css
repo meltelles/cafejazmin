@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flexbox;
+    margin: 3em;
+    text-align: center;
+}
+
+/*imagenes index*/
+
+.contenedor {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.angeles {
+    width: 200px;
+    border-radius: 5%;
+    
+}
+
+.nosotros {
+    display: flex;
+}
+
+.chef {
+    width: 280px;
+    height: auto;
+}
+
+.cafe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cafedeespecialidad {
+    width: 350px;
+    padding: 3rem;
+}
+
+/* Titulos */
+
+h1 {
+    text-align: center;
+    color: #8B1825;
+    background-color: #F7F1D1;
+    background-size: cover;
+}
+
+h2 {
+    margin: 1.5em;
+
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin: 1.5rem;
+}
+
+/*TopBar*/
+
+ul {
+    list-style: none;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #F9CED5;
+
+}
+
+li {
+    display: inline;
+    padding-right: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small
+}
+
+.imgprincipal img {
+    width: 100%;
+    height: auto;
+}
+
+/* estilo formulario */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin: 2em;
+}
+
+fieldset label {
+    font-weight: 600;
+    padding: 12px;
+}
+
+fieldset .form-input {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px 0;
+    
+}
+
+fieldset .form-select {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding: 10px 0;
+}
+
+fieldset input[type="text"],
+input[type="email"],
+select {
+    padding: 12px;
+    border: 1px solid #c6c6c6;
+}
+
+fieldset button {
+    background-color: #8B1825;
+    color: #F9CED5;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    margin: 20px 20px 0px 20px;
+}
+
+/* FOOTER*/
+footer {
+    text-align: center;
+    background-color: #F7F1D1;
+}

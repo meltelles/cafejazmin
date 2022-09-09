@@ -1,53 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.flex-container {
-    display: flexbox;
-    margin: 3em;
-    text-align: center;
-}
+/* Elementos principales */
 
-/*imagenes index*/
-
-.imagenes {
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 3rem;
-    padding: 2rem;
-}
-
-.imagenes img{
-    width: 200px;
-    border-radius: 5%;
-    
-}
-
-.nosotros {
-    display: flex;
-}
-
-.chef {
-    width: 280px;
-    height: auto;
-}
-
-.cafeEspecialidad {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 20%;
-}
-
-.cafeEspecialidad img{
-    width: 350px;
-    padding: 3rem;
-}
-
-/* Titulos */
 
 h1 {
     text-align: center;
@@ -61,10 +19,14 @@ h2 {
 
 }
 
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+p {
     font-size: medium;
     margin: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #8B1825;
 }
 
 /*TopBar*/
@@ -74,27 +36,75 @@ ul {
     padding: 0.5rem;
     text-align: center;
     background-color: #F9CED5;
-    
+
 
 }
-a {
-    text-decoration: none;
-    color: #8B1825;
-}
+
 
 li {
     display: inline;
     padding-right: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:small
+    font-size: small
 }
 
-.imgPrincipal img {
+
+.flex-container {
+    display: flexbox;
+    margin: 3em;
+    text-align: center;
+}
+
+/* Imagenes */
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.imagenes img {
+    width: 200px;
+    border-radius: 5%;
+
+}
+
+.img-principal img {
     width: 100%;
     height: auto;
 }
 
-/* estilo formulario */
+/* Nosotros */
+
+.nosotros {
+    display: flex;
+}
+
+.chef {
+    width: 280px;
+    height: auto;
+}
+
+/* Cafe */
+
+.cafe-especialidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.cafe-especialidad img {
+    width: 350px;
+    padding: 3rem;
+}
+
+
+/* Formulario */
+
 fieldset {
     display: flex;
     flex-direction: column;
@@ -111,7 +121,7 @@ fieldset .form-input {
     display: inline-flex;
     flex-direction: column;
     padding: 5px 0;
-    
+
 }
 
 fieldset .form-select {
@@ -138,7 +148,8 @@ fieldset button {
     margin: 20px 20px 0px 20px;
 }
 
-/* FOOTER*/
+/* Footer */
+
 footer {
     text-align: center;
     background-color: #F7F1D1;

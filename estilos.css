@@ -6,7 +6,6 @@
 
 /* Elementos principales */
 
-
 h1 {
     text-align: center;
     color: #8B1825;
@@ -15,7 +14,8 @@ h1 {
 }
 
 h2 {
-    margin: 1.5em;
+    text-align: center;
+    margin: 1.5rem;
 
 }
 
@@ -40,14 +40,12 @@ ul {
 
 }
 
-
 li {
     display: inline;
     padding-right: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small
 }
-
 
 .flex-container {
     display: flexbox;
@@ -102,7 +100,6 @@ li {
     padding: 3rem;
 }
 
-
 /* Formulario */
 
 fieldset {
@@ -135,7 +132,6 @@ fieldset input[type="texto"],
 input[type="email"],
 select {
     padding: 12px;
-    border: 1px solid #c6c6c6;
 }
 
 fieldset button {
@@ -143,9 +139,17 @@ fieldset button {
     color: #F9CED5;
     cursor: pointer;
     border: none;
+    border-radius: 0.5rem;
     padding: 12px;
     font-size: 16px;
-    margin: 20px 20px 0px 20px;
+    margin: 30px 0px;
+}
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #8B1825, #F9CED5, #8B1825);
 }
 
 /* Footer */

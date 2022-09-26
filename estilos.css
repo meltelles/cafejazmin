@@ -6,11 +6,23 @@
 
 /* Elementos principales */
 
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F9CED5;  
+}
+
+#logo {
+    width: 80px;    
+}
+
+
+
 h1 {
-    text-align: center;
     color: #8B1825;
-    background-color: #F7F1D1;
-    background-size: cover;
+    text-align: center;
+    margin: 1.5rem;
 }
 
 h2 {
@@ -98,6 +110,27 @@ li {
 .cafe-especialidad img {
     width: 350px;
     padding: 3rem;
+}
+
+/*Contacto*/
+
+.grid-contacto{
+    display: grid;
+    grid-template-areas:
+    "mapa formulario";
+    grid-template-columns: 40% 60%;
+}
+
+#mapa {
+    grid-area: mapa;
+}
+
+#formulario {
+    grid-area: formulario;
+}
+
+.ubicacion{
+    margin: 3rem;
 }
 
 /* Formulario */

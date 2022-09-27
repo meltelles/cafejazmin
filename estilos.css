@@ -10,11 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #F9CED5;  
+    background-color: #F9CED5;
 }
 
 #logo {
-    width: 80px;    
+    width: 80px;
 }
 
 h1 {
@@ -80,6 +80,7 @@ li {
     height: auto;
 }
 
+
 .caja {
     text-align: center;
     overflow: hidden;
@@ -91,14 +92,14 @@ li {
 
 .caja img {
     width: 320px;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 5%;
 }
 
 .caja .hover {
     width: 0%;
     height: 50hv;
-    background-color: #F9CED5;
+    background-color: #F7F1D1;
     position: absolute;
     top: 0;
     display: flex;
@@ -108,33 +109,34 @@ li {
     transition: .3s all;
 }
 
-.hover h5{
-color: #8B1825;
+.hover h4 {
+    color: #8B1825;
 }
 
-.caja:hover .hover{
+.caja:hover .hover {
     width: 100%;
 }
+
 /* Nosotros */
 
-.nosotros{
+.nosotros {
     display: grid;
     grid-template-areas:
         "concepto concepto"
         "chef biografia"
-        ;
-        grid-template-columns: 50% 50%;
+    ;
+    grid-template-columns: 50% 50%;
 }
 
-#concepto{
+#concepto {
     grid-area: concepto;
 }
 
-#chef{
+#chef {
     grid-area: chef;
 }
 
-#biografia{
+#biografia {
     grid-area: biografia;
     background-color: #F7F1D1
 }
@@ -163,12 +165,12 @@ color: #8B1825;
 
 /*Contacto*/
 
-.grid-contacto{
+.grid-contacto {
     display: flex;
     flex-direction: column;
 }
 
-.ubicacion{
+.ubicacion {
     margin: 3rem;
 }
 
@@ -228,7 +230,8 @@ fieldset button {
 
 footer {
     text-align: center;
-    background-color: #F7F1D1;
+    background: rgb(247, 241, 209);
+    background: radial-gradient(circle, rgba(247, 241, 209, 1) 0%, rgba(249, 206, 213, 1) 100%);
 }
 
 .border-content {
@@ -237,18 +240,18 @@ footer {
 }
 
 
-@media screen and (min-width: 768px){
-    .grid-contacto{
+@media screen and (min-width: 768px) {
+    .grid-contacto {
         display: grid;
         grid-template-areas:
-        "mapa formulario";
+            "mapa formulario";
         grid-template-columns: 40% 50%;
     }
 
     #mapa {
         grid-area: mapa;
     }
-    
+
     #formulario {
         grid-area: formulario;
     }
@@ -256,11 +259,11 @@ footer {
     .imagenes {
         flex-direction: row;
     }
-    
+
     .caja {
         width: 200px;
     }
-    
+
     .caja img {
         width: 200px;
     }
@@ -272,7 +275,7 @@ footer {
         align-items: center;
         padding: 0 20%;
     }
-    
+
     .cafe-especialidad img {
         width: 350px;
         padding: 3rem;

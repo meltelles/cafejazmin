@@ -17,8 +17,6 @@
     width: 80px;    
 }
 
-
-
 h1 {
     color: #8B1825;
     text-align: center;
@@ -70,15 +68,11 @@ li {
 .imagenes {
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     margin: 3rem;
     padding: 2rem;
-}
-
-.imagenes img {
-    width: 200px;
-    border-radius: 5%;
-
+    box-sizing: border-box;
 }
 
 .img-principal img {
@@ -86,47 +80,92 @@ li {
     height: auto;
 }
 
+.caja {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    width: 320px;
+    border-radius: 5%;
+}
+
+.caja img {
+    width: 320px;
+    object-fit:cover;
+    border-radius: 5%;
+}
+
+.caja .hover {
+    width: 0%;
+    height: 50hv;
+    background-color: #F9CED5;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .3s all;
+}
+
+.hover h5{
+color: #8B1825;
+}
+
+.caja:hover .hover{
+    width: 100%;
+}
 /* Nosotros */
 
-.nosotros {
-    display: flex;
+.nosotros{
+    display: grid;
+    grid-template-areas:
+        "concepto concepto"
+        "chef biografia"
+        ;
+        grid-template-columns: 50% 50%;
+}
+
+#concepto{
+    grid-area: concepto;
+}
+
+#chef{
+    grid-area: chef;
+}
+
+#biografia{
+    grid-area: biografia;
+    background-color: #F7F1D1
 }
 
 .chef {
-    width: 280px;
+    width: 250px;
     height: auto;
 }
 
 /* Cafe */
 
 .cafe-especialidad {
+    background-color: #E78999;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 0 20%;
+    margin: 3rem;
 }
 
 .cafe-especialidad img {
-    width: 350px;
+    width: 300px;
     padding: 3rem;
 }
 
 /*Contacto*/
 
 .grid-contacto{
-    display: grid;
-    grid-template-areas:
-    "mapa formulario";
-    grid-template-columns: 40% 60%;
-}
-
-#mapa {
-    grid-area: mapa;
-}
-
-#formulario {
-    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
 }
 
 .ubicacion{
@@ -195,4 +234,52 @@ footer {
 .border-content {
     max-width: 720px;
     margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px){
+    .grid-contacto{
+        display: grid;
+        grid-template-areas:
+        "mapa formulario";
+        grid-template-columns: 40% 50%;
+    }
+
+    #mapa {
+        grid-area: mapa;
+    }
+    
+    #formulario {
+        grid-area: formulario;
+    }
+
+    .imagenes {
+        flex-direction: row;
+    }
+    
+    .caja {
+        width: 200px;
+    }
+    
+    .caja img {
+        width: 200px;
+    }
+
+    .cafe-especialidad {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20%;
+    }
+    
+    .cafe-especialidad img {
+        width: 350px;
+        padding: 3rem;
+    }
+
+    .nosotros {
+        display: flex;
+    }
+
 }

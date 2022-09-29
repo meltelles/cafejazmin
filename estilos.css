@@ -35,7 +35,14 @@ h2 {
 
 }
 
+h3{
+    color: #8B1825;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
 p {
+    text-align: center;
     font-size: medium;
     margin: 1.5rem;
 }

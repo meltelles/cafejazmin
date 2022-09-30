@@ -1,93 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Link CSS-->
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../estilos.css" />
     <!--Icono titulo-->
-    <link rel="icon" href="../asset/logo-original.jpg" type="image/icono-original">
+    <link
+      rel="icon"
+      href="../asset/logo-original.jpg"
+      type="image/icono-original"
+    />
     <title>Contacto | Jazmin Chebar</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Topbar-->
     <header id="header">
-        <section class="topbar">
-            <img id="logo" src="../asset/logo-original.jpg" alt="cafe jazmin chebar">
-        </section>
+      <section id="topbar">
+        <img
+          id="logo"
+          src="../asset/logo-original.jpg"
+          alt="cafe jazmin chebar"
+        />
+      </section>
+      <nav>
         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="./cafe.html">Café de especialidad</a></li>
-            <li><a href="./carta.html">Carta</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="./cafe.html">Café de especialidad</a></li>
+          <li><a href="./carta.html">Carta</a></li>
         </ul>
+      </nav>
     </header>
     <main class="grid-contacto">
-
-        <!--Formulario-->
-        <section>
-            <div class="border-content" id="formulario">
-                <h1>
-                    Suscribete
-                </h1>
-                <form>
-                    <fieldset>
-                        <div class="form-input">
-                            <label for="nombre">
-                                Nombre
-                            </label>
-                            <input class="border-gradient" type="texto" name="nombre" placeholder="Ingresa tu nombre"
-                                required />
-                        </div>
-                        <div class="form-input">
-                            <label for="email">
-                                Correo
-                            </label>
-                            <input class="border-gradient" type="email" name="email" placeholder="Ingresa tu mail"
-                                required />
-                        </div>
-                        <div class="form-input">
-                            <label for="mensaje">
-                                Mensaje
-                            </label>
-                            <textarea class="border-gradient" name="mensaje" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="form-checkbox">
-                            <input class="border-gradient" type="checkbox" name="subscribe" value="true" required />
-                            <label for="subscribe">
-                                Quiero recibir novedades a mi mail
-                            </label>
-                        </div>
-                        <!--Boton de enviar-->
-                        <button type="enviar">
-                            Suscribirse!
-                        </button>
-                    </fieldset>
-                </form>
+      <!--Formulario-->
+      <section class="contenido" id="formulario">
+        <h1>Suscribete</h1>
+        <form>
+          <fieldset>
+            <div class="form-input">
+              <label for="nombre"> Nombre </label>
+              <input
+                class="border-gradient"
+                type="texto"
+                name="nombre"
+                placeholder="Ingresa tu nombre"
+                required
+              />
             </div>
-        </section>
-        <section id="mapa">
-            <iframe class="ubicacion"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5809109191828!2d-58.42937058531359!3d-34.58946936425023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb510819a5e1f%3A0xf23bd62b2a3ae438!2sCaf%C3%A9%20Jazmin%20%2B%20Narda%20Lepes!5e0!3m2!1ses!2sar!4v1664224833611!5m2!1ses!2sar"
-                width="80%" height="300" style="border:0;" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="direccion">
-                <section class="flex-container">
-                    <p>Te esperamos en El Salvador 4698, de martes a domingo de 9 a 20 hs</p>
-                </section>
+            <div class="form-input">
+              <label for="email"> Correo </label>
+              <input
+                class="border-gradient"
+                type="email"
+                name="email"
+                placeholder="Ingresa tu mail"
+                required
+              />
             </div>
+            <div class="form-input">
+              <label for="mensaje"> Mensaje </label>
+              <textarea
+                class="border-gradient"
+                name="mensaje"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input
+                class="border-gradient"
+                type="checkbox"
+                name="subscribe"
+                value="true"
+              />
+              <label for="subscribe">
+                Quiero recibir novedades a mi mail
+              </label>
+            </div>
+            <!--Boton de enviar-->
+            <button type="submit">Suscribirse!</button>
+          </fieldset>
+        </form>
+      </section>
+      <section id="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5809109191828!2d-58.42937058531359!3d-34.58946936425023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb510819a5e1f%3A0xf23bd62b2a3ae438!2sCaf%C3%A9%20Jazmin%20%2B%20Narda%20Lepes!5e0!3m2!1ses!2sar!4v1664224833611!5m2!1ses!2sar"
+          width="80%"
+          height="300"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <section id="direccion" class="flex-container">
+          <p>
+            Te esperamos en El Salvador 4698, de martes a domingo de 9 a 20 hs
+          </p>
         </section>
+      </section>
     </main>
     <!--Footer-->
     <footer id="footer">
-        <a href="#header">
-            Ir arriba
-        </a>
+      <a href="#header"> Ir arriba </a>
     </footer>
-</body>
-
+  </body>
 </html>

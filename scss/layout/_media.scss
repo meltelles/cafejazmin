@@ -1,0 +1,55 @@
+@media screen and (min-width: 868px) {
+    .galeria {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: 868px) {
+    .caja {
+      width: 200px;
+    }
+  
+    .caja img {
+      width: 200px;
+    }
+  }
+
+  @media screen and (min-width: 548px) {
+    .nosotros-grid {
+      display: grid;
+      grid-template-areas:
+        "concepto concepto"
+        "chef biografia"
+        "local local";
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .nosotros-grid {
+      display: grid;
+      grid-template-areas:
+        "concepto chef biografia"
+        "local local local";
+      grid-template-columns: 50% 25% 25%;
+    }
+  }
+   
+  @media screen and (min-width: 900px) {
+    .cafe-especialidad {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 20%;
+      img {
+        width: 350px;
+        padding: 3rem;
+      }
+     }
+    }
+    @media screen and (min-width: 768px) {
+        .grid-contacto {
+          flex-direction: row-reverse;
+        }
+      }

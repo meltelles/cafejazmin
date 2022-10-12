@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+main {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+h1 {
+  color: #8b1825;
+  text-align: center;
+  margin: 1.5rem; }
+
+h2 {
+  text-align: center;
+  margin: 1.5rem; }
+
+h3 {
+  color: #8b1825;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+p {
+  text-align: justify;
+  font-size: medium;
+  margin: 1.5rem; }
+
+a {
+  text-decoration: none;
+  color: #8b1825; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  height: 50px;
+  background: #f7f1d1;
+  background: radial-gradient(circle, #f7f1d1 0%, #f9ced5 100%); }
+
+#topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f9ced5; }
+
+#logo {
+  width: 80px; }
+
+ul {
+  list-style: none;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #f9ced5; }
+
+li {
+  display: inline;
+  padding-right: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small; }
+
+.flex-container {
+  display: flexbox;
+  text-align: center; }
+
+#texto-principal {
+  max-width: 900px; }
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 3rem; */
+  padding: 2rem;
+  box-sizing: border-box; }
+
+#banner-principal {
+  min-height: 285px;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url("./asset/vasosrosas.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.nosotros-grid {
+  display: grid;
+  grid-template-areas: "concepto concepto" "biografia biografia" "chef chef" "local local";
+  grid-template-columns: 50% 50%; }
+
+#concepto {
+  grid-area: concepto; }
+
+#chef {
+  grid-area: chef;
+  overflow: hidden;
+  width: 100%; }
+
+#local {
+  grid-area: local;
+  max-height: 400px;
+  overflow: hidden; }
+  #local img {
+    width: 100%;
+    object-fit: fill;
+    object-position: center; }
+
+#biografia {
+  grid-area: biografia;
+  background-color: #f7f1d1; }
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.grid-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#texto-carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em; }
+
+.contenido {
+  max-width: 720px;
+  margin: 0 auto; }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 2em; }
+  fieldset label {
+    font-weight: 600;
+    padding: 12px; }
+  fieldset .form-input {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px 0; }
+  fieldset .form-select {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding: 10px 0; }
+  fieldset button {
+    background-color: #8b1825;
+    color: #f9ced5;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 16px;
+    margin: 30px 0px; }
+
+fieldset input[type="texto"],
+input[type="email"],
+select {
+  padding: 12px; }
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #8b1825, #f9ced5, #8b1825); }
+
+.cafe-especialidad {
+  background-color: #e78999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10%;
+  margin: 1rem; }
+  .cafe-especialidad img {
+    width: 100%;
+    padding: 3rem 0; }
+
+.caja {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5%;
+  width: 320px;
+  border-radius: 5%; }
+  .caja img {
+    width: 320px;
+    object-fit: cover;
+    border-radius: 5%; }
+  .caja .hover {
+    width: 0%;
+    height: 50hv;
+    background-color: #f7f1d1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s all; }
+  .caja:hover .hover {
+    width: 100%; }
+
+.hover h4 {
+  color: #8b1825; }
+
+@media screen and (min-width: 868px) {
+  .galeria {
+    flex-direction: row; } }
+
+@media screen and (min-width: 868px) {
+  .caja {
+    width: 200px; }
+  .caja img {
+    width: 200px; } }
+
+@media screen and (min-width: 548px) {
+  .nosotros-grid {
+    display: grid;
+    grid-template-areas: "concepto concepto" "chef biografia" "local local";
+    grid-template-columns: 50% 50%; } }
+
+@media screen and (min-width: 1200px) {
+  .nosotros-grid {
+    display: grid;
+    grid-template-areas: "concepto chef biografia" "local local local";
+    grid-template-columns: 50% 25% 25%; } }
+
+@media screen and (min-width: 900px) {
+  .cafe-especialidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20%; }
+    .cafe-especialidad img {
+      width: 350px;
+      padding: 3rem; } }
+
+@media screen and (min-width: 768px) {
+  .grid-contacto {
+    flex-direction: row-reverse; } }

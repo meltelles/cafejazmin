@@ -1,0 +1,34 @@
+.nosotros-grid {
+    display: grid;
+    grid-template-areas:
+      "concepto concepto"
+      "biografia biografia"
+      "chef chef"
+      "local local";
+    grid-template-columns: 50% 50%;
+  }
+  
+  #concepto {
+    grid-area: concepto;
+  }
+  
+  #chef {
+    grid-area: chef;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  #local {
+    grid-area: local;
+    max-height: 400px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        object-fit: fill;
+        object-position: center;
+      }
+    }
+    #biografia {
+        grid-area: biografia;
+        background-color: #f7f1d1;
+      }

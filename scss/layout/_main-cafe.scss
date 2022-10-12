@@ -1,0 +1,13 @@
+.cafe-especialidad {
+    background-color: #e78999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+    margin: 1rem;
+    img {
+        width: 100%;
+        padding: 3rem 0;
+      }
+  }

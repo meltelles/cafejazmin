@@ -1,0 +1,31 @@
+.caja {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    width: 320px;
+    border-radius: 5%;
+    img {
+        width: 320px;
+        object-fit: cover;
+        border-radius: 5%;
+      }
+    .hover {
+        width: 0%;
+        height: 50hv;
+        background-color: #f7f1d1;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.3s all;
+      }
+      &:hover .hover {
+        width: 100%;
+      }
+  }
+  .hover h4 {
+    color: #8b1825;
+  }

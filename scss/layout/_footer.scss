@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height: 50px;
+    background: rgb(247, 241, 209);
+    background: radial-gradient(
+      circle,
+      rgba(247, 241, 209, 1) 0%,
+      rgba(249, 206, 213, 1) 100%
+    );
+  }

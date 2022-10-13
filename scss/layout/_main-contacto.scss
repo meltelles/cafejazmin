@@ -1,68 +1,66 @@
 #mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .grid-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #texto-carta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1em;
-  }
-  .contenido {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  
-  fieldset {
-    display: flex;
-    flex-direction: column;
-    border: 0;
-    margin: 2em;
-    label {
-        font-weight: 600;
-        padding: 12px;
-      }
-    .form-input {
-        display: inline-flex;
-        flex-direction: column;
-        padding: 5px 0;
-      }
-    .form-select {
-        display: flex;
-        flex-direction: column;
-        max-width: 40%;
-        padding: 10px 0;
-      }
-      button {
-        background-color: #8b1825;
-        color: #f9ced5;
-        cursor: pointer;
-        border: none;
-        border-radius: 0.5rem;
-        padding: 12px;
-        font-size: 16px;
-        margin: 30px 0px;
-      }
-  }
-  
-  fieldset input[type="texto"],
-  input[type="email"],
-  select {
+  @include display-flex(column, center, center);
+}
+
+.grid-contacto {
+  @include display-flex(column, center, center);
+}
+
+#texto-carta {
+  @include display-flex(column, center, center);
+  margin-bottom: 1em;
+}
+
+.contenido {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin: 2em;
+
+  label {
+    font-weight: 600;
     padding: 12px;
   }
 
-  .border-gradient {
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(to left, #8b1825, #f9ced5, #8b1825);
+  .form-input {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px 0;
   }
+
+  .form-select {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding: 10px 0;
+  }
+
+  button {
+    background-color: $color-texto;
+    color: $color-principal;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 16px;
+    margin: 30px 0px;
+  }
+}
+
+fieldset input[type="texto"],
+input[type="email"],
+select {
+  padding: 12px;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, $color-texto, $color-principal, $color-texto);
+}

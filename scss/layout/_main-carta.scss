@@ -13,12 +13,10 @@
     .hover {
         width: 0%;
         height: 50hv;
-        background-color: #f7f1d1;
+        background-color: $color-secundario;
         position: absolute;
         top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(none, center, center);
         overflow: hidden;
         transition: 0.3s all;
       }
@@ -27,5 +25,5 @@
       }
   }
   .hover h4 {
-    color: #8b1825;
+    color: $color-texto;
   }

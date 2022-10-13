@@ -1,8 +1,9 @@
 @import "./base/reset";
+@import "./utilities/variables";
+@import "./utilities/mixins";
 @import "./base/typo";
 @import "./components/bootstrap";
 @import "./components/button";
-@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/main-index";
 @import "./layout/main-nosotros";
@@ -10,6 +11,4 @@
 @import "./layout/main-cafe";
 @import "./layout/main-carta";
 @import "./layout/media";
-@import "./utilities/funtios";
-@import "./utilities/mixins";
-@import "./utilities/variables";
+@import "./layout/footer";

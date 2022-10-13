@@ -37,10 +37,7 @@
    
   @media screen and (min-width: 900px) {
     .cafe-especialidad {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
+      @include display-flex(row, space-around, center);
       padding: 0 20%;
       img {
         width: 350px;

@@ -1,14 +1,11 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @include display-flex(column, center, center);
     margin-top: auto;
     height: 50px;
-    background: rgb(247, 241, 209);
+    background: $color-secundario;
     background: radial-gradient(
       circle,
-      rgba(247, 241, 209, 1) 0%,
-      rgba(249, 206, 213, 1) 100%
+      $color-secundario 0%,
+      $color-principal 100%
     );
   }

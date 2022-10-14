@@ -47,6 +47,10 @@ a {
 #logo {
   width: 80px; }
 
+.navbar ul li {
+  display: block;
+  padding-left: 2em; }
+
 ul {
   list-style: none;
   padding: 0.5rem;
@@ -214,13 +218,13 @@ select {
 
 @media screen and (min-width: 868px) {
   .galeria {
-    flex-direction: row; } }
-
-@media screen and (min-width: 868px) {
+    flex-direction: row; }
   .caja {
     width: 200px; }
-  .caja img {
-    width: 200px; } }
+    .caja img {
+      width: 200px; }
+  .navbar ul li {
+    display: inline-block; } }
 
 @media screen and (min-width: 548px) {
   .nosotros-grid {

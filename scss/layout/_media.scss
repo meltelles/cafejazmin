@@ -2,16 +2,16 @@
     .galeria {
       flex-direction: row;
     }
-  }
-
-  @media screen and (min-width: 868px) {
     .caja {
       width: 200px;
+      img{
+        width: 200px;
+      }
     }
-  
-    .caja img {
-      width: 200px;
+    .navbar ul li{
+      display: inline-block;
     }
+
   }
 
   @media screen and (min-width: 548px) {

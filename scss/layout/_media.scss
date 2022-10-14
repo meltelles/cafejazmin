@@ -8,9 +8,6 @@
         width: 200px;
       }
     }
-    .navbar ul li{
-      display: inline-block;
-    }
 
   }
 
@@ -22,6 +19,9 @@
         "chef biografia"
         "local local";
       grid-template-columns: 50% 50%;
+    }
+    .navbar ul li{
+      display: inline-block;
     }
   }
   

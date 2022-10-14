@@ -222,15 +222,15 @@ select {
   .caja {
     width: 200px; }
     .caja img {
-      width: 200px; }
-  .navbar ul li {
-    display: inline-block; } }
+      width: 200px; } }
 
 @media screen and (min-width: 548px) {
   .nosotros-grid {
     display: grid;
     grid-template-areas: "concepto concepto" "chef biografia" "local local";
-    grid-template-columns: 50% 50%; } }
+    grid-template-columns: 50% 50%; }
+  .navbar ul li {
+    display: inline-block; } }
 
 @media screen and (min-width: 1200px) {
   .nosotros-grid {

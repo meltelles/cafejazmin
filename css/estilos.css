@@ -26,7 +26,8 @@ h2 {
 
 h3 {
   color: #8b1825;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+ "Lucida Sans", Arial, sans-serif; }
 
 p {
   text-align: justify;
@@ -84,13 +85,16 @@ li {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  background-image: url(../../asset/vasosrosas.jpg);
+  background-image: url(../asset/vasosrosas.jpg);
   background-position: center;
   background-size: cover; }
 
 .nosotros-grid {
   display: grid;
-  grid-template-areas: "concepto concepto" "biografia biografia" "chef chef" "local local";
+  grid-template-areas: "concepto concepto"
+ "biografia biografia"
+ "chef chef"
+ "local local";
   grid-template-columns: 50% 50%; }
 
 #concepto {
@@ -227,7 +231,9 @@ select {
 @media screen and (min-width: 548px) {
   .nosotros-grid {
     display: grid;
-    grid-template-areas: "concepto concepto" "chef biografia" "local local";
+    grid-template-areas: "concepto concepto"
+ "chef biografia"
+ "local local";
     grid-template-columns: 50% 50%; }
   .navbar ul li {
     display: inline-block; } }
@@ -235,7 +241,8 @@ select {
 @media screen and (min-width: 1200px) {
   .nosotros-grid {
     display: grid;
-    grid-template-areas: "concepto chef biografia" "local local local";
+    grid-template-areas: "concepto chef biografia"
+ "local local local";
     grid-template-columns: 50% 25% 25%; } }
 
 @media screen and (min-width: 900px) {

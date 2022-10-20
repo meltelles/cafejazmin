@@ -1,45 +1,74 @@
 #topbar {
   @include display-flex(none, space-around, center);
-    background-color: $color-principal;
-  }
-  
-  #logo {
-    width: 80px;
-  }
+  background-color: $color-principal;
+}
 
-  .navbar ul li{
-    display: block;
-    padding-left: 2em;
+#logo {
+  width: 80px;
+}
+
+.navbar-expanded {
+  display: none;
+}
+.navbar-collapsed {
+  display: flex;
+  .navbar-collapse {
+    padding-top: 70px;
+    transition: 0.05s ease-in-out;
   }
-  
-  ul {
-    list-style: none;
-    padding: 0.5rem;
+}
+
+.navbar {
+  background-color: $color-principal;
+  justify-content: space-evenly;
+  min-height: 70px;
+  .navbar-nav {
+    display: flex;
     text-align: center;
-    background-color: $color-principal;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 100%;
+    .nav-group {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .nav-item {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: small;
+      margin: auto 0;
+      .nav-link {
+        white-space: nowrap;
+        color: $color-texto;
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
   }
-  
-  li {
-    display: inline;
-    padding-right: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-  }
-  
-  .flex-container {
-    display: flexbox;
-    text-align: center;
+  .navbar-toggler {
+    border: none;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='brown' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
   }
 
-  #texto-principal {
-    max-width: 900px;
+  .logo-collapsed {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 10%;
   }
-  
-  .galeria {
-    @include display-flex(column, space-around, center);
-    /* margin: 3rem; */
-    padding: 2rem;
-    box-sizing: border-box;
-  }
+}
 
-  
+#texto-principal {
+  max-width: 900px;
+}
+
+.galeria {
+  @include display-flex(column, space-around, center);
+  /* margin: 3rem; */
+  padding: 2rem;
+  box-sizing: border-box;
+}

@@ -62,5 +62,10 @@ select {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient(to left, $color-texto, $color-principal, $color-texto);
+  border-image-source: linear-gradient(
+    to left,
+    $color-texto,
+    $color-principal,
+    $color-texto
+  );
 }

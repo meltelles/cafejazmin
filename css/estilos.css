@@ -47,25 +47,48 @@ a {
 #logo {
   width: 80px; }
 
-.navbar ul li {
-  display: block;
-  padding-left: 2em; }
+.navbar-expanded {
+  display: none; }
 
-ul {
-  list-style: none;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: #f9ced5; }
+.navbar-collapsed {
+  display: flex; }
+  .navbar-collapsed .navbar-collapse {
+    padding-top: 70px;
+    transition: 0.05s ease-in-out; }
 
-li {
-  display: inline;
-  padding-right: 1.5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small; }
-
-.flex-container {
-  display: flexbox;
-  text-align: center; }
+.navbar {
+  background-color: #f9ced5;
+  justify-content: space-evenly;
+  min-height: 70px; }
+  .navbar .navbar-nav {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 100%; }
+    .navbar .navbar-nav .nav-group {
+      display: flex;
+      justify-content: space-around;
+      width: 100%; }
+    .navbar .navbar-nav .nav-item {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: small;
+      margin: auto 0; }
+      .navbar .navbar-nav .nav-item .nav-link {
+        white-space: nowrap;
+        color: #8b1825; }
+        .navbar .navbar-nav .nav-item .nav-link.active {
+          font-weight: bold; }
+  .navbar .navbar-toggler {
+    border: none; }
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='brown' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); }
+  .navbar .logo-collapsed {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 10%; }
 
 #texto-principal {
   max-width: 900px; }
@@ -251,7 +274,11 @@ select {
 
 @media screen and (min-width: 768px) {
   .grid-contacto {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+  .navbar-collapsed {
+    display: none; }
+  .navbar-expanded {
+    display: flex; } }
 
 footer {
   display: flex;

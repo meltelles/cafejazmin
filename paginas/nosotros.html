@@ -1,71 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="keywords" content="Jazmin Chebar Cafe">
-    <meta name="description" content="Jazmin chebar, cafe, pasteleria, buenos aires">
-    <meta name="author" content="Melany Telles">
-    <meta name="copyright" content="Cafe jazmin chebar">
-    <!--Link CSS-->
-    <link rel="stylesheet" href="../css/estilos.css">
-    <!--Icono titulo-->
-    <link
-      rel="icon"
-      href="../asset/logo-original.jpg"
-      type="image/icono-original"
-    />
-    <title>Nosotros | Jazmin Chebar</title>
-  </head>
 
-  <body>
-    <!--TopBar-->
-    <header id="header">
-      <section id="topbar">
-        <img
-          id="logo"
-          src="../asset/logo-original.jpg"
-          alt="cafe jazmin chebar"
-        />
-      </section>
-      <nav class="navbar">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./cafe.html">Café de especialidad</a></li>
-          <li><a href="./carta.html">Carta</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="nosotros-grid">
-      <section id="concepto">
-        <h1>Nosotros</h1>
-        <p>
-          Café Jazmin + Narda Lepes Ubicado frente a nuestras esquinas en el
-          corazón de Palermo Viejo, Café Jazmin ofrece opciones de pastelería
-          artesanal, almuerzo y café de especialidad.
-        </p>
-      </section>
-      <section id="biografia">
-        <h2>Narda Lepes</h2>
-        <p>
-          Nacida en Buenos Aires, Argentina, su debut en elgourmet.com, en el
-          año 2000, marcó el inicio de una exitosa carrera televisiva, que
-          continúa aún hoy. Asimismo, su trabajo le valió varios premios Martín
-          Fierro en los rubros Mejor Programa Culinario y Mejor Conducción
-          Femenina.
-        </p>
-      </section>
-      <img id="chef" src="../asset/NardaLepes.jpg" alt="Narda Lepes" />
-      <section id="local">
-        <img src="../asset/exteriorhorizontal.jpg" alt="exterior cafe jazmin" />
-      </section>
-    </main>
-    <!--Footer-->
-    <footer id="footer">
-      <a href="#header"> Ir arriba </a>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Jazmin Chebar Cafe" />
+  <meta name="description" content="Jazmin chebar, cafe, pasteleria, buenos aires" />
+  <meta name="author" content="Melany Telles" />
+  <meta name="copyright" content="Cafe jazmin chebar" />
+  <!--Link Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!--Link CSS-->
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <!--Icono titulo-->
+  <link rel="icon" href="../asset/logo-original.jpg" type="image/icono-original" />
+  <title>Nosotros | Jazmin Chebar</title>
+</head>
+
+<body>
+  <!--TopBar-->
+  <header id="header">
+    <nav class="navbar navbar-expand-md navbar-light navbar-expanded">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-group">
+              <div class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </div>
+            </li>
+            <li>
+              <img id="logo" src="../asset/logo-original.jpg" alt="cafe jazmin chebar" />
+            </li>
+            <li class="nav-group">
+              <div class="nav-item">
+                <a class="nav-link" href="./cafe.html">Café de especialidad</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="./carta.html">Carta</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light navbar-collapsed">
+      <div class="container-fluid">
+        <img class="logo-collapsed" id="logo" src="../asset/logo-original.jpg" alt="cafe jazmin chebar" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cafe.html">Café de especialidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./carta.html">Carta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="nosotros-grid">
+    <section id="concepto">
+      <h1>Nosotros</h1>
+      <p>
+        Café Jazmin + Narda Lepes Ubicado frente a nuestras esquinas en el
+        corazón de Palermo Viejo, Café Jazmin ofrece opciones de pastelería
+        artesanal, almuerzo y café de especialidad.
+      </p>
+    </section>
+    <section id="biografia">
+      <h2>Narda Lepes</h2>
+      <p>
+        Nacida en Buenos Aires, Argentina, su debut en elgourmet.com, en el
+        año 2000, marcó el inicio de una exitosa carrera televisiva, que
+        continúa aún hoy. Asimismo, su trabajo le valió varios premios Martín
+        Fierro en los rubros Mejor Programa Culinario y Mejor Conducción
+        Femenina.
+      </p>
+    </section>
+    <img id="chef" src="../asset/NardaLepes.jpg" alt="Narda Lepes" />
+    <section id="local">
+      <img src="../asset/exteriorhorizontal.jpg" alt="exterior cafe jazmin" />
+    </section>
+  </main>
+  <!--Footer-->
+  <footer id="footer">
+    <a href="#header"> Ir arriba </a>
+  </footer>
+</body>
+
 </html>

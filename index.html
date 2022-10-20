@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="keywords" content="Jazmin Chebar Cafe">
-    <meta name="description" content="Jazmin chebar, cafe, pasteleria, buenos aires">
-    <meta name="author" content="Melany Telles">
-    <meta name="copyright" content="Cafe jazmin chebar">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Jazmin Chebar Cafe" />
+    <meta
+      name="description"
+      content="Jazmin chebar, cafe, pasteleria, buenos aires"
+    />
+    <meta name="author" content="Melany Telles" />
+    <meta name="copyright" content="Cafe jazmin chebar" />
+    <!--Link Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!--Link CSS-->
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css" />
     <!--Icono titulo-->
     <link
       rel="icon"
@@ -22,22 +37,102 @@
   <body>
     <!--TopBar-->
     <header id="header">
-      <section id="topbar">
-        <img
-          id="logo"
-          src="./asset/logo-original.jpg"
-          alt="cafe jazmin chebar"
-        />
-      </section>
-      
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="./paginas/nosotros.html">Nosotros</a></li>
-          <li><a href="./paginas/contacto.html">Contacto</a></li>
-          <li><a href="./paginas/cafe.html">Café de especialidad</a></li>
-          <li><a href="./paginas/carta.html">Carta</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-md navbar-light navbar-expanded">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-group">
+                <div class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link" href="./paginas/nosotros.html"
+                    >Nosotros</a
+                  >
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link" href="./paginas/contacto.html"
+                    >Contacto</a
+                  >
+                </div>
+              </li>
+              <li>
+                <img
+                  id="logo"
+                  src="./asset/logo-original.jpg"
+                  alt="cafe jazmin chebar"
+                />
+              </li>
+              <li class="nav-group">
+                <div class="nav-item">
+                  <a class="nav-link" href="./paginas/cafe.html"
+                    >Café de especialidad</a
+                  >
+                </div>
+                <div class="nav-item">
+                  <a class="nav-link" href="./paginas/carta.html">Carta</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-md navbar-light navbar-collapsed">
+        <div class="container-fluid">
+          <img
+            class="logo-collapsed"
+            id="logo"
+            src="./asset/logo-original.jpg"
+            alt="cafe jazmin chebar"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/cafe.html"
+                  >Café de especialidad</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/carta.html">Carta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>

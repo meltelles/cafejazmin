@@ -26,7 +26,8 @@ h2 {
 
 h3 {
   color: #8b1825;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 1.5rem; }
 
 p {
   text-align: justify;
@@ -243,7 +244,7 @@ select {
   .galeria {
     flex-direction: row; }
   .caja {
-    width: 200px; }
+    width: 230px; }
     .caja img {
       width: 200px; } }
 
